@@ -1,0 +1,299 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\CandidateHub\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AF9258EB-52F5-4FE4-A78B-A84B0D6CD97F}|CandidateHub.csproj|d:\\candidatehub\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AF9258EB-52F5-4FE4-A78B-A84B0D6CD97F}|CandidateHub.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF9258EB-52F5-4FE4-A78B-A84B0D6CD97F}|CandidateHub.csproj|d:\\candidatehub\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF9258EB-52F5-4FE4-A78B-A84B0D6CD97F}|CandidateHub.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF9258EB-52F5-4FE4-A78B-A84B0D6CD97F}|CandidateHub.csproj|d:\\candidatehub\\validationmodelattribute\\validationmodelattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF9258EB-52F5-4FE4-A78B-A84B0D6CD97F}|CandidateHub.csproj|solutionrelative:validationmodelattribute\\validationmodelattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF9258EB-52F5-4FE4-A78B-A84B0D6CD97F}|CandidateHub.csproj|d:\\candidatehub\\unittests\\candidateservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF9258EB-52F5-4FE4-A78B-A84B0D6CD97F}|CandidateHub.csproj|solutionrelative:unittests\\candidateservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF9258EB-52F5-4FE4-A78B-A84B0D6CD97F}|CandidateHub.csproj|d:\\candidatehub\\validationmodelattribute\\githuburlattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF9258EB-52F5-4FE4-A78B-A84B0D6CD97F}|CandidateHub.csproj|solutionrelative:validationmodelattribute\\githuburlattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF9258EB-52F5-4FE4-A78B-A84B0D6CD97F}|CandidateHub.csproj|d:\\candidatehub\\unittests\\candidatecontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF9258EB-52F5-4FE4-A78B-A84B0D6CD97F}|CandidateHub.csproj|solutionrelative:unittests\\candidatecontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF9258EB-52F5-4FE4-A78B-A84B0D6CD97F}|CandidateHub.csproj|d:\\candidatehub\\repositories\\candidaterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF9258EB-52F5-4FE4-A78B-A84B0D6CD97F}|CandidateHub.csproj|solutionrelative:repositories\\candidaterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF9258EB-52F5-4FE4-A78B-A84B0D6CD97F}|CandidateHub.csproj|d:\\candidatehub\\controllers\\candidatescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF9258EB-52F5-4FE4-A78B-A84B0D6CD97F}|CandidateHub.csproj|solutionrelative:controllers\\candidatescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF9258EB-52F5-4FE4-A78B-A84B0D6CD97F}|CandidateHub.csproj|d:\\candidatehub\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF9258EB-52F5-4FE4-A78B-A84B0D6CD97F}|CandidateHub.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF9258EB-52F5-4FE4-A78B-A84B0D6CD97F}|CandidateHub.csproj|d:\\candidatehub\\interfaces\\icandidaterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF9258EB-52F5-4FE4-A78B-A84B0D6CD97F}|CandidateHub.csproj|solutionrelative:interfaces\\icandidaterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF9258EB-52F5-4FE4-A78B-A84B0D6CD97F}|CandidateHub.csproj|d:\\candidatehub\\interfaces\\icandidateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF9258EB-52F5-4FE4-A78B-A84B0D6CD97F}|CandidateHub.csproj|solutionrelative:interfaces\\icandidateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF9258EB-52F5-4FE4-A78B-A84B0D6CD97F}|CandidateHub.csproj|d:\\candidatehub\\services\\candidateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF9258EB-52F5-4FE4-A78B-A84B0D6CD97F}|CandidateHub.csproj|solutionrelative:services\\candidateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF9258EB-52F5-4FE4-A78B-A84B0D6CD97F}|CandidateHub.csproj|d:\\candidatehub\\validationmodelattribute\\linkedinattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF9258EB-52F5-4FE4-A78B-A84B0D6CD97F}|CandidateHub.csproj|solutionrelative:validationmodelattribute\\linkedinattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF9258EB-52F5-4FE4-A78B-A84B0D6CD97F}|CandidateHub.csproj|d:\\candidatehub\\models\\candidate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF9258EB-52F5-4FE4-A78B-A84B0D6CD97F}|CandidateHub.csproj|solutionrelative:models\\candidate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF9258EB-52F5-4FE4-A78B-A84B0D6CD97F}|CandidateHub.csproj|d:\\candidatehub\\automapperprofile\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF9258EB-52F5-4FE4-A78B-A84B0D6CD97F}|CandidateHub.csproj|solutionrelative:automapperprofile\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF9258EB-52F5-4FE4-A78B-A84B0D6CD97F}|CandidateHub.csproj|d:\\candidatehub\\candidatehub.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{AF9258EB-52F5-4FE4-A78B-A84B0D6CD97F}|CandidateHub.csproj|solutionrelative:candidatehub.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\CandidateHub\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\CandidateHub\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T21:19:25.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CandidateRepository.cs",
+              "DocumentMoniker": "D:\\CandidateHub\\Repositories\\CandidateRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\CandidateRepository.cs",
+              "ToolTip": "D:\\CandidateHub\\Repositories\\CandidateRepository.cs",
+              "RelativeToolTip": "Repositories\\CandidateRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T21:25:03.78Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CandidateControllerTests.cs",
+              "DocumentMoniker": "D:\\CandidateHub\\UnitTests\\CandidateControllerTests.cs",
+              "RelativeDocumentMoniker": "UnitTests\\CandidateControllerTests.cs",
+              "ToolTip": "D:\\CandidateHub\\UnitTests\\CandidateControllerTests.cs",
+              "RelativeToolTip": "UnitTests\\CandidateControllerTests.cs",
+              "ViewState": "AgIAAK4AAAAAAAAAAAAmwMQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T21:18:17.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CandidateServiceTests.cs",
+              "DocumentMoniker": "D:\\CandidateHub\\UnitTests\\CandidateServiceTests.cs",
+              "RelativeDocumentMoniker": "UnitTests\\CandidateServiceTests.cs",
+              "ToolTip": "D:\\CandidateHub\\UnitTests\\CandidateServiceTests.cs",
+              "RelativeToolTip": "UnitTests\\CandidateServiceTests.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAqwEUAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T21:17:34.314Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ValidationModelAttribute.cs",
+              "DocumentMoniker": "D:\\CandidateHub\\ValidationModelAttribute\\ValidationModelAttribute.cs",
+              "RelativeDocumentMoniker": "ValidationModelAttribute\\ValidationModelAttribute.cs",
+              "ToolTip": "D:\\CandidateHub\\ValidationModelAttribute\\ValidationModelAttribute.cs",
+              "RelativeToolTip": "ValidationModelAttribute\\ValidationModelAttribute.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T21:26:15.571Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\CandidateHub\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\CandidateHub\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-16T21:17:49.979Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GithubUrlAttribute.cs",
+              "DocumentMoniker": "D:\\CandidateHub\\ValidationModelAttribute\\GithubUrlAttribute.cs",
+              "RelativeDocumentMoniker": "ValidationModelAttribute\\GithubUrlAttribute.cs",
+              "ToolTip": "D:\\CandidateHub\\ValidationModelAttribute\\GithubUrlAttribute.cs",
+              "RelativeToolTip": "ValidationModelAttribute\\GithubUrlAttribute.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T21:17:41.134Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CandidatesController.cs",
+              "DocumentMoniker": "D:\\CandidateHub\\Controllers\\CandidatesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CandidatesController.cs",
+              "ToolTip": "D:\\CandidateHub\\Controllers\\CandidatesController.cs",
+              "RelativeToolTip": "Controllers\\CandidatesController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwFwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T21:23:48.244Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\CandidateHub\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\CandidateHub\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T21:22:39.924Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ICandidateRepository.cs",
+              "DocumentMoniker": "D:\\CandidateHub\\Interfaces\\ICandidateRepository.cs",
+              "RelativeDocumentMoniker": "Interfaces\\ICandidateRepository.cs",
+              "ToolTip": "D:\\CandidateHub\\Interfaces\\ICandidateRepository.cs",
+              "RelativeToolTip": "Interfaces\\ICandidateRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T21:25:10.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ICandidateService.cs",
+              "DocumentMoniker": "D:\\CandidateHub\\Interfaces\\ICandidateService.cs",
+              "RelativeDocumentMoniker": "Interfaces\\ICandidateService.cs",
+              "ToolTip": "D:\\CandidateHub\\Interfaces\\ICandidateService.cs",
+              "RelativeToolTip": "Interfaces\\ICandidateService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T21:25:08.681Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CandidateService.cs",
+              "DocumentMoniker": "D:\\CandidateHub\\Services\\CandidateService.cs",
+              "RelativeDocumentMoniker": "Services\\CandidateService.cs",
+              "ToolTip": "D:\\CandidateHub\\Services\\CandidateService.cs",
+              "RelativeToolTip": "Services\\CandidateService.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwDsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T21:25:11.853Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LinkedInAttribute.cs",
+              "DocumentMoniker": "D:\\CandidateHub\\ValidationModelAttribute\\LinkedInAttribute.cs",
+              "RelativeDocumentMoniker": "ValidationModelAttribute\\LinkedInAttribute.cs",
+              "ToolTip": "D:\\CandidateHub\\ValidationModelAttribute\\LinkedInAttribute.cs",
+              "RelativeToolTip": "ValidationModelAttribute\\LinkedInAttribute.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T21:17:43.044Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Candidate.cs",
+              "DocumentMoniker": "D:\\CandidateHub\\Models\\Candidate.cs",
+              "RelativeDocumentMoniker": "Models\\Candidate.cs",
+              "ToolTip": "D:\\CandidateHub\\Models\\Candidate.cs",
+              "RelativeToolTip": "Models\\Candidate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T21:17:29.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AutoMapperProfile.cs",
+              "DocumentMoniker": "D:\\CandidateHub\\AutoMapperProfile\\AutoMapperProfile.cs",
+              "RelativeDocumentMoniker": "AutoMapperProfile\\AutoMapperProfile.cs",
+              "ToolTip": "D:\\CandidateHub\\AutoMapperProfile\\AutoMapperProfile.cs",
+              "RelativeToolTip": "AutoMapperProfile\\AutoMapperProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T21:22:56.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CandidateHub.http",
+              "DocumentMoniker": "D:\\CandidateHub\\CandidateHub.http",
+              "RelativeDocumentMoniker": "CandidateHub.http",
+              "ToolTip": "D:\\CandidateHub\\CandidateHub.http",
+              "RelativeToolTip": "CandidateHub.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-11-16T21:17:45.719Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
