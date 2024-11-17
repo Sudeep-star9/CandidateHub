@@ -9,7 +9,7 @@ namespace CandidateHub.Interfaces
         Task<CandidateDto> GetByEmailAsync(string email);
         Task<List<CandidateDto>> GetAllAsync(int pageIndex, int pageSize);
         Task<CandidateDto> AddAsync(CreateCandidateDto candidateDto);
-        Task<CandidateDto> UpdateAsync(string email, CreateCandidateDto candidateDto); // Updated method signature
+        Task<CandidateDto> UpdateAsync(string email, CreateCandidateDto candidateDto); 
         Task<CandidateDto> DeleteAsync(int id);
     }
 }
