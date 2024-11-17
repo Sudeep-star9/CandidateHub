@@ -39,20 +39,19 @@ namespace CandidateHub.Repositories
 
         public async Task<Candidate> UpdateAsync(string email, Candidate candidate)
         {
-            // Find the existing candidate by email
+            
             var existingCandidate = await _context.Candidates.FirstOrDefaultAsync(c => c.Email == email);
 
             if (existingCandidate != null)
             {
-                // Update properties of the existing candidate
+            
                 _context.Entry(existingCandidate).CurrentValues.SetValues(candidate);
 
-                // Save changes
                 await _context.SaveChangesAsync();
                 return existingCandidate;
             }
 
-            return null; // Candidate not found
+            return null; 
         }
 
         public async Task<Candidate> DeleteAsync(int id)
