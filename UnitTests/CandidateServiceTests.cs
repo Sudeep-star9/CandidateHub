@@ -79,7 +79,7 @@ namespace CandidateHub.Tests.Services
 
             _mockMapper.Setup(mapper => mapper.Map<Candidate>(candidateDto)).Returns(candidate);
             _mockCandidateRepository.Setup(repo => repo.GetByEmailAsync(candidateDto.Email)).ReturnsAsync((Candidate?)null);
-            _mockCandidateRepository.Setup(repo => repo.AddAsync(candidate)).ReturnsAsync(addedCandidate);
+            _mockCandidateRepository.Setup(repo => repo.AddAsync(candidate)).ReturnsAsync((Candidate?)addedCandidate);
             _mockMapper.Setup(mapper => mapper.Map<CandidateDto>(addedCandidate)).Returns(candidateDto);
 
             var result = await _service.AddAsync(candidateDto);
@@ -87,6 +87,7 @@ namespace CandidateHub.Tests.Services
             Assert.NotNull(result);
             Assert.Equal(candidateDto.Email, result.Email);
         }
+
 
         [Fact]
         public async Task AddAsync_ReturnsNull_WhenEmailAlreadyExists()
