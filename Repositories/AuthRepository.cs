@@ -21,7 +21,7 @@ namespace CandidateHub.Repositories
             {
                 FirstName = registerDto.FirstName,
                 LastName = registerDto.LastName,
-                UserName = registerDto.Email,  // Set UserName to Email
+                UserName = registerDto.Email,  
                 Email = registerDto.Email,
             };
 
