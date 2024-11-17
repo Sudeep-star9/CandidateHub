@@ -13,7 +13,8 @@ namespace CandidateHub.Controllers
     {
         private readonly ICandidateService _candidateService;
 
-        public CandidateController(ICandidateService candidateService)
+        public 
+            CandidateController(ICandidateService candidateService)
         {
             _candidateService = candidateService;
         }

@@ -5,7 +5,7 @@ namespace CandidateHub.Data
 {
     public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> dbContext) : DbContext(dbContext)
     {
-        public DbSet<Candidate> candidates { get; set; }
+        public DbSet<Candidate> Candidates { get; set; }
 
 
 
