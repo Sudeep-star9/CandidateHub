@@ -45,50 +45,56 @@ namespace CandidateHub.Services
 
         public async Task<List<CandidateDto>> GetAllAsync(int pageIndex, int pageSize)
         {
-            // Define the cache key for all candidates
             var cacheKey = $"candidates_page_{pageIndex}_size_{pageSize}";
 
-            // Try to get the list of candidates from cache
             if (_cache.TryGetValue(cacheKey, out List<CandidateDto> cachedCandidates))
             {
                 return cachedCandidates;
             }
 
-          
             var candidates = await _candidateRepository.GetAllAsync(pageIndex, pageSize);
             var candidatesDto = _mapper.Map<List<CandidateDto>>(candidates);
 
-            // Cache the list for 10 minutes
+            // Cache candidates data for 10 minutes
             _cache.Set(cacheKey, candidatesDto, TimeSpan.FromMinutes(10));
-
             return candidatesDto;
         }
 
-        public async Task<CandidateDto> AddAsync(CandidateDto candidateDto)
+        public async Task<CandidateDto> AddAsync(CreateCandidateDto candidateDto)
         {
+            
             var existingCandidate = await _candidateRepository.GetByEmailAsync(candidateDto.Email);
             if (existingCandidate != null)
             {
-                return null;
+                return null; 
             }
 
+            
             var candidate = _mapper.Map<Candidate>(candidateDto);
+
+           
             var addedCandidate = await _candidateRepository.AddAsync(candidate);
+
+           
             return _mapper.Map<CandidateDto>(addedCandidate);
         }
 
-        public async Task<CandidateDto> UpdateAsync(int id, CandidateDto candidateDto)
+        public async Task<CandidateDto> UpdateAsync(string email, CreateCandidateDto candidateDto)
         {
-            var existingCandidate = await _candidateRepository.GetByEmailAsync(candidateDto.Email);
+           
+            var existingCandidate = await _candidateRepository.GetByEmailAsync(email);
+
             if (existingCandidate == null)
             {
-                return null;
+                return null; 
             }
 
-            var candidate = _mapper.Map<Candidate>(candidateDto);
-            var updatedCandidate = await _candidateRepository.UpdateAsync(candidate);
+           
+            _mapper.Map(candidateDto, existingCandidate);
 
-            return _mapper.Map<CandidateDto>(updatedCandidate);
+            var updatedCandidate = await _candidateRepository.UpdateAsync(existingCandidate.Email, existingCandidate);
+
+            return updatedCandidate != null ? _mapper.Map<CandidateDto>(updatedCandidate) : null;
         }
 
         public async Task<CandidateDto> DeleteAsync(int id)

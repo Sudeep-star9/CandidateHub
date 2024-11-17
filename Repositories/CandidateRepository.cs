@@ -37,11 +37,22 @@ namespace CandidateHub.Repositories
             return candidate;
         }
 
-        public async Task<Candidate> UpdateAsync(Candidate candidate)
+        public async Task<Candidate> UpdateAsync(string email, Candidate candidate)
         {
-            _context.Candidates.Update(candidate);
-            await _context.SaveChangesAsync();
-            return candidate;
+            // Find the existing candidate by email
+            var existingCandidate = await _context.Candidates.FirstOrDefaultAsync(c => c.Email == email);
+
+            if (existingCandidate != null)
+            {
+                // Update properties of the existing candidate
+                _context.Entry(existingCandidate).CurrentValues.SetValues(candidate);
+
+                // Save changes
+                await _context.SaveChangesAsync();
+                return existingCandidate;
+            }
+
+            return null; // Candidate not found
         }
 
         public async Task<Candidate> DeleteAsync(int id)

@@ -8,7 +8,9 @@ namespace CandidateHub.AutoMapperProfile
     {
         public AutoMapperProfile()
         {
-            CreateMap<CandidateDto, Candidate>().ReverseMap();    
+            CreateMap<CreateCandidateDto, Candidate>();
+            CreateMap<Candidate, CandidateDto>();
+            CreateMap<Candidate, CreateCandidateDto>().ReverseMap();
         }
 
     }

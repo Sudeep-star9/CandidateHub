@@ -3,17 +3,15 @@ using System.ComponentModel.DataAnnotations;
 
 namespace CandidateHub.DTOs
 {
-    public class CandidateDto
+    public class CreateCandidateDto
     {
-        public int Id { get; set; }
-
         [Required(ErrorMessage = "First name is required.")]
         public string FirstName { get; set; }
 
         [Required(ErrorMessage = "Last name is required.")]
         public string LastName { get; set; }
 
-        
+
         public string PhoneNumber { get; set; }
 
         [Required(ErrorMessage = "Email is required.")]
@@ -22,7 +20,7 @@ namespace CandidateHub.DTOs
 
         public string CallTimeInterval { get; set; } = string.Empty;
 
-        
+
         [LinkedInAttribute(ErrorMessage = "Invalid LinkedIn URL.")]
         public string? LinkedInUrl { get; set; }
 

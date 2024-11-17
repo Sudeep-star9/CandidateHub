@@ -5,7 +5,6 @@ using CandidateHub.Models;
 using CandidateHub.Services;
 using Microsoft.Extensions.Caching.Memory;
 using Moq;
-using System.Collections.Generic;
 using System.Threading.Tasks;
 using Xunit;
 
@@ -30,12 +29,10 @@ namespace CandidateHub.Tests.Services
         public async Task GetByEmailAsync_ReturnsFromCache_WhenCandidateIsCached()
         {
             var email = "sudeep@example.com";
-            var candidate = new Candidate { Email = email, FirstName = "Sudeep", LastName = "Adhikari" };
             var candidateDto = new CandidateDto { Email = email, FirstName = "Sudeep", LastName = "Adhikari" };
 
+            // Setup cache to return the cached value
             _mockCache.Setup(c => c.TryGetValue(email, out candidateDto)).Returns(true);
-            _mockCandidateRepository.Setup(repo => repo.GetByEmailAsync(email)).ReturnsAsync(candidate);
-            _mockMapper.Setup(mapper => mapper.Map<CandidateDto>(candidate)).Returns(candidateDto);
 
             var result = await _service.GetByEmailAsync(email);
 
@@ -50,6 +47,7 @@ namespace CandidateHub.Tests.Services
             var candidate = new Candidate { Email = email, FirstName = "Sudeep", LastName = "Adhikari" };
             var candidateDto = new CandidateDto { Email = email, FirstName = "Sudeep", LastName = "Adhikari" };
 
+            // Setup repository and mapper
             _mockCandidateRepository.Setup(repo => repo.GetByEmailAsync(email)).ReturnsAsync(candidate);
             _mockMapper.Setup(mapper => mapper.Map<CandidateDto>(candidate)).Returns(candidateDto);
 
@@ -73,14 +71,16 @@ namespace CandidateHub.Tests.Services
         [Fact]
         public async Task AddAsync_ReturnsCandidateDto_WhenAddedSuccessfully()
         {
-            var candidateDto = new CandidateDto { Email = "sudeep@example.com", FirstName = "Sudeep", LastName = "Adhikari" };
-            var candidate = new Candidate { Email = "sudeep@example.com", FirstName = "Sudeep", LastName = "Adhikari" };
-            var addedCandidate = new Candidate { Email = "sudeep@example.com", FirstName = "Sudeep", LastName = "Adhikari" };
+            var candidateDto = new CreateCandidateDto { Email = "sudeep@example.com", FirstName = "Sudeep", LastName = "Adhikari" };
+            var candidateModel = new Candidate { Email = candidateDto.Email, FirstName = candidateDto.FirstName, LastName = candidateDto.LastName };
 
-            _mockMapper.Setup(mapper => mapper.Map<Candidate>(candidateDto)).Returns(candidate);
+            // Setup repository and mapper for adding a new candidate
+            _mockMapper.Setup(mapper => mapper.Map<Candidate>(candidateDto)).Returns(candidateModel);
             _mockCandidateRepository.Setup(repo => repo.GetByEmailAsync(candidateDto.Email)).ReturnsAsync((Candidate?)null);
-            _mockCandidateRepository.Setup(repo => repo.AddAsync(candidate)).ReturnsAsync((Candidate?)addedCandidate);
-            _mockMapper.Setup(mapper => mapper.Map<CandidateDto>(addedCandidate)).Returns(candidateDto);
+
+            var addedCandidateModel = new Candidate { Email = "sudeep@example.com", FirstName = "Sudeep", LastName = "Adhikari" };
+
+            _mockCandidateRepository.Setup(repo => repo.AddAsync(candidateModel)).ReturnsAsync(addedCandidateModel);
 
             var result = await _service.AddAsync(candidateDto);
 
@@ -88,18 +88,19 @@ namespace CandidateHub.Tests.Services
             Assert.Equal(candidateDto.Email, result.Email);
         }
 
-
         [Fact]
         public async Task AddAsync_ReturnsNull_WhenEmailAlreadyExists()
         {
-            var candidateDto = new CandidateDto { Email = "sudeep@example.com", FirstName = "Sudeep", LastName = "Adhikari" };
-            var existingCandidate = new Candidate { Email = "sudeep@example.com", FirstName = "Sudeep", LastName = "Adhikari" };
+            var candidateDto = new CreateCandidateDto { Email = "sudeep@example.com", FirstName = "Sudeep", LastName = "Adhikari" };
 
-            _mockCandidateRepository.Setup(repo => repo.GetByEmailAsync(candidateDto.Email)).ReturnsAsync(existingCandidate);
+            // Setup existing candidate scenario
+            var existingCandidateModel = new Candidate { Email = candidateDto.Email };
+
+            _mockCandidateRepository.Setup(repo => repo.GetByEmailAsync(candidateDto.Email)).ReturnsAsync(existingCandidateModel);
 
             var result = await _service.AddAsync(candidateDto);
 
-            Assert.Null(result);
+            Assert.Null(result); 
         }
     }
 }

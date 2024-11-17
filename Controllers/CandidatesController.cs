@@ -1,6 +1,6 @@
 ﻿using CandidateHub.DTOs;
 using CandidateHub.Interfaces;
-using CandidateHub.ValidationModelAttribute; 
+using CandidateHub.ValidationModelAttribute;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -13,13 +13,11 @@ namespace CandidateHub.Controllers
     {
         private readonly ICandidateService _candidateService;
 
-        public 
-            CandidateController(ICandidateService candidateService)
+        public CandidateController(ICandidateService candidateService)
         {
             _candidateService = candidateService;
         }
 
-     
         [HttpGet("{email}")]
         public async Task<IActionResult> GetCandidateByEmail(string email)
         {
@@ -33,7 +31,7 @@ namespace CandidateHub.Controllers
             return Ok(candidate);
         }
 
-       
+      
         [HttpGet]
         public async Task<IActionResult> GetAllCandidates([FromQuery] int pageIndex = 1, [FromQuery] int pageSize = 10)
         {
@@ -47,17 +45,16 @@ namespace CandidateHub.Controllers
             return Ok(candidates);
         }
 
-        
+      
         [HttpPost]
-        [ValidateModel]  
-        public async Task<IActionResult> AddCandidate([FromBody] CandidateDto candidateDto)
+        [ValidateModel]
+        public async Task<IActionResult> AddCandidate([FromBody] CreateCandidateDto candidateDto)
         {
             if (candidateDto == null)
             {
                 return BadRequest(new { message = "Invalid candidate data" });
             }
 
-           
             var existingCandidate = await _candidateService.GetByEmailAsync(candidateDto.Email);
             if (existingCandidate != null)
             {
@@ -73,18 +70,18 @@ namespace CandidateHub.Controllers
             return CreatedAtAction(nameof(GetCandidateByEmail), new { email = newCandidate.Email }, newCandidate);
         }
 
-
-        
-        [HttpPut("{id}")]
-        [ValidateModel]  
-        public async Task<IActionResult> UpdateCandidate(int id, [FromBody] CandidateDto candidateDto)
+       
+        [HttpPut("{email}")]
+        [ValidateModel]
+        public async Task<IActionResult> UpdateCandidate(string email, [FromBody] CreateCandidateDto candidateDto)
         {
             if (candidateDto == null)
             {
                 return BadRequest(new { message = "Invalid candidate data" });
             }
 
-            var updatedCandidate = await _candidateService.UpdateAsync(id, candidateDto);
+           
+            var updatedCandidate = await _candidateService.UpdateAsync(email, candidateDto);
             if (updatedCandidate == null)
             {
                 return NotFound(new { message = "Candidate not found or email is already in use" });
@@ -93,7 +90,7 @@ namespace CandidateHub.Controllers
             return Ok(updatedCandidate);
         }
 
-      
+       
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteCandidate(int id)
         {
